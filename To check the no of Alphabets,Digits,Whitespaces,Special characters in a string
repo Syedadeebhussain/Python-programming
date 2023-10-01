@@ -1,0 +1,18 @@
+password=input("enter your password")
+c1 = 0
+c2 = 0
+c3 = 0
+c4 = 0
+for i in password:
+   if i.isdigit():
+      c1+=1
+   elif i.isalpha():
+      c2+=1
+   elif i.isspace():
+      c3+=1
+   else:
+       c4+=1
+print(f"no of digits is {c1}")
+print(f"no of alphabets is {c2}")
+print(f"no of space is {c3}")
+print(f"no of special characters is {c4}")
